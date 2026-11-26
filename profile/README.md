@@ -12,14 +12,14 @@
 
 | Brand | Repository | Focus | Links |
 | :--- | :--- | :--- | :--- |
-| **ContextRadar** | [`context-radar-mcp`](https://github.com/eatingDream-antigravity-plugins/context-radar-mcp) | Context telemetry, 3-way cold-cache attribution, prefix-safe `scratch/` distillation & gated `/compact` / fresh-chat handoffs | [Site](https://contextradar.eatingdream.dev) · [Releases](https://github.com/eatingDream-antigravity-plugins/context-radar-mcp/releases) |
-| **ClamGuard** | [`mac-clamshell-mcp`](https://github.com/eatingDream-antigravity-plugins/mac-clamshell-mcp) | macOS closed-lid performance throttling, external-display-safe display guard, read-only AppleSMC fan telemetry, brightness & verified screen lock | [Site](https://clamguard.eatingdream.dev) · [Releases](https://github.com/eatingDream-antigravity-plugins/mac-clamshell-mcp/releases) |
-| **RemoteCast** | [`chrome-stream-mcp`](https://github.com/eatingDream-antigravity-plugins/chrome-stream-mcp) | Weak-network local Google Chrome CDP screencast relay, standby keep-alive, isolated Remote Chrome & interactive tab controller | [Site](https://remotecast.eatingdream.dev) · [Releases](https://github.com/eatingDream-antigravity-plugins/chrome-stream-mcp/releases) |
-| **ColabDeck** | [`colab-mcp`](https://github.com/eatingDream-antigravity-plugins/colab-mcp) | Google Colab GPU/TPU runtime dashboard, kernel execution, compute-unit telemetry & zero-flicker MCP App panel | [Site](https://colabdeck.eatingdream.dev) · [Releases](https://github.com/eatingDream-antigravity-plugins/colab-mcp/releases) |
+| **ContextRadar** | [`ContextRadar`](https://github.com/eatingDream-antigravity-plugins/ContextRadar) | Context telemetry, 3-way cold-cache attribution, prefix-safe `scratch/` distillation & gated `/compact` / fresh-chat handoffs | [Site](https://contextradar.eatingdream.dev) · [Releases](https://github.com/eatingDream-antigravity-plugins/ContextRadar/releases) |
+| **ClamGuard** | [`ClamGuard`](https://github.com/eatingDream-antigravity-plugins/ClamGuard) | macOS closed-lid performance throttling, external-display-safe display guard, read-only AppleSMC fan telemetry, brightness & verified screen lock | [Site](https://clamguard.eatingdream.dev) · [Releases](https://github.com/eatingDream-antigravity-plugins/ClamGuard/releases) |
+| **RemoteCast** | [`RemoteCast`](https://github.com/eatingDream-antigravity-plugins/RemoteCast) | Weak-network local Google Chrome CDP screencast relay, standby keep-alive, isolated Remote Chrome & interactive tab controller | [Site](https://remotecast.eatingdream.dev) · [Releases](https://github.com/eatingDream-antigravity-plugins/RemoteCast/releases) |
+| **ColabDeck** | [`ColabDeck`](https://github.com/eatingDream-antigravity-plugins/ColabDeck) | Google Colab GPU/TPU runtime dashboard, kernel execution, compute-unit telemetry & zero-flicker MCP App panel | [Site](https://colabdeck.eatingdream.dev) · [Releases](https://github.com/eatingDream-antigravity-plugins/ColabDeck/releases) |
 
 ## Shared Foundation & Companion Projects
 
-- **[PanelKit](https://github.com/eatingDream-antigravity-plugins/agy-mcp-kit)** (`agy-mcp-kit`) — Shared zero-bloat Rust MCP/SWR runtime primitives, 16-token Editorial-Warm panel design kit, and SHA-256 zero-drift vendor sync powering the entire suite.
+- **[PanelKit](https://github.com/eatingDream-antigravity-plugins/PanelKit)** (`agy-mcp-kit`) — Shared zero-bloat Rust MCP/SWR runtime primitives, 16-token Editorial-Warm panel design kit, and SHA-256 zero-drift vendor sync powering the entire suite.
 - **[AIDigest](https://github.com/eatingDream/ai-digest)** (`eatingDream/ai-digest`) — Agent-driven bilingual (EN / 简体中文) daily & weekly AI digest pipeline published as an encrypted static site.
 
 ## Engineering Standards
