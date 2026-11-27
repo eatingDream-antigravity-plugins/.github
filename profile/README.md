@@ -2,29 +2,31 @@
 
 # eatingDream Antigravity Plugins
 
-**Fast, local-first desktop & browser tools with live, zero-flicker panels for AI coding agents.**
+**Small, focused plugins for Antigravity.**
 
-[Suite Home](https://eatingdream.dev) · [AI Digest](https://ai.dreamsi.cc) · [GitHub Org](https://github.com/eatingDream-antigravity-plugins)
+[Suite Home](https://eatingdream.dev) · [AI Digest](https://ai.dreamsi.cc) · [GitHub](https://github.com/eatingDream-antigravity-plugins)
 
 </div>
 
-## Plugin Suite
+Each plugin is a single Rust binary with a compact sidebar panel. Together they handle the small things that slow down long agent sessions on a Mac: a filling context window, a hot laptop with the lid closed, a browser you can't see, and GPU bills you forgot about.
 
-| Plugin | Repository | What It Does | Links |
+## Plugins
+
+| Plugin | Repo | What it does | Links |
 | :--- | :--- | :--- | :--- |
-| **Context Radar** | [`context-radar`](https://github.com/eatingDream-antigravity-plugins/context-radar) | Spot why an Antigravity turn slowed down, inspect cache hit rates, and keep long chats lean before compacting | [Site](https://contextradar.eatingdream.dev) · [Releases](https://github.com/eatingDream-antigravity-plugins/context-radar/releases) |
-| **Clam Guard** | [`clam-guard`](https://github.com/eatingDream-antigravity-plugins/clam-guard) | Keep MacBooks fast and cool with the lid closed, adjust built-in brightness safely, and verify screen locks | [Site](https://clamguard.eatingdream.dev) · [Releases](https://github.com/eatingDream-antigravity-plugins/clam-guard/releases) |
-| **Remote Cast** | [`remote-cast`](https://github.com/eatingDream-antigravity-plugins/remote-cast) | Stream and control local browser tabs smoothly over weak networks with adaptive frame rates and standby keep-alive | [Site](https://remotecast.eatingdream.dev) · [Releases](https://github.com/eatingDream-antigravity-plugins/remote-cast/releases) |
-| **Colab Deck** | [`colab-deck`](https://github.com/eatingDream-antigravity-plugins/colab-deck) | Monitor Google Colab GPU/TPU runtimes, compute units, and kernel runs from one live control panel | [Site](https://colabdeck.eatingdream.dev) · [Releases](https://github.com/eatingDream-antigravity-plugins/colab-deck/releases) |
+| **Context Radar** | [`context-radar`](https://github.com/eatingDream-antigravity-plugins/context-radar) | Shows token use, cache hits, and cost for every session and subagent, and helps you decide when to `/compact` or open a new chat. | [Site](https://contextradar.eatingdream.dev) · [Releases](https://github.com/eatingDream-antigravity-plugins/context-radar/releases) |
+| **Clam Guard** | [`clam-guard`](https://github.com/eatingDream-antigravity-plugins/clam-guard) | Keeps a MacBook awake with the screen dark when you close the lid, and eases off heavy work as it heats up without touching fan control. | [Site](https://clamguard.eatingdream.dev) · [Releases](https://github.com/eatingDream-antigravity-plugins/clam-guard/releases) |
+| **Remote Cast** | [`remote-cast`](https://github.com/eatingDream-antigravity-plugins/remote-cast) | Streams a Chrome tab into the Antigravity sidebar so you can watch and steer what an agent is doing — click, type, and switch tabs. | [Site](https://remotecast.eatingdream.dev) · [Releases](https://github.com/eatingDream-antigravity-plugins/remote-cast/releases) |
+| **Colab Deck** | [`colab-deck`](https://github.com/eatingDream-antigravity-plugins/colab-deck) | Starts, watches, and stops Google Colab sessions, forwards ports, and deploys GGUF models with auto-stop and spending limits. | [Site](https://colabdeck.eatingdream.dev) · [Releases](https://github.com/eatingDream-antigravity-plugins/colab-deck/releases) |
 
-## Shared Foundation & Companion Projects
+## Shared Toolkit & Companion
 
-- **[Panel Kit](https://github.com/eatingDream-antigravity-plugins/panel-kit)** (`agy-mcp-kit`) — Shared Rust MCP runtime, dark-first single-file panel kit, browserless CSP/i18n QA gates, and SHA-256 drift-free sync powering the entire suite.
-- **[AI Digest](https://github.com/eatingDream/ai-digest)** (`eatingDream/ai-digest`) — Turns 150+ sources into a bilingual (EN / 简体中文) daily & weekly AI digest with verifiable citations—live at **[ai.dreamsi.cc](https://ai.dreamsi.cc)**.
+- **[Panel Kit](https://github.com/eatingDream-antigravity-plugins/panel-kit)** (`panel-kit`) — The small bridge, Lucid Indigo dark-first theme, and build setup these plugins use to ship sidebar panels under 64 KiB.
+- **[AI Digest](https://github.com/eatingDream/ai-digest)** — Turns ~155 open AI sources into a bilingual (EN / 简体中文) daily and weekly briefing at **[ai.dreamsi.cc](https://ai.dreamsi.cc)**.
 
-## Built to Stay Fast & Private
+## How They're Built
 
-- **Sub-millisecond local responses**: Standalone native Rust binaries (macOS & Linux, SHA-256 verified) with warm in-memory caching.
-- **Zero white-flash UI**: Single-file dark-first panels (`< 43.5 KB`) with strict offline CSP, live EN / 中文 switching, and automated i18n parity checks.
-- **Local-first privacy**: Zero telemetry, read-only access to external databases, loopback-only relays, and owner-only local state.
-- **Ready for any AI agent**: Every repository ships `llms.txt`, `docs/ai-guide.md`, and an installable `SKILL.md` (`npx skills add eatingDream-antigravity-plugins/<repo>`).
+- **Single native binaries**: Compiled Rust tools for macOS and Linux with no runtime interpreter dependencies.
+- **Compact dark-first panels**: Single-file Lucid Indigo UIs under 64 KiB with strict offline CSP and live EN / 简体中文 switching.
+- **Local-first by default**: No telemetry, read-only access to local state, loopback-only relays, and owner-only config files.
+- **Built for agents too**: Every repo ships `llms.txt`, `docs/ai-guide.md`, and an installable skill (`npx skills add eatingDream-antigravity-plugins/<repo>`).
