@@ -20,7 +20,7 @@
 ## Shared Foundation & Companion Projects
 
 - **[PanelKit](https://github.com/eatingDream-antigravity-plugins/PanelKit)** (`agy-mcp-kit`) — Shared zero-bloat Rust MCP/SWR runtime primitives, 16-token Editorial-Warm panel design kit, and SHA-256 zero-drift vendor sync powering the entire suite.
-- **[AIDigest](https://github.com/eatingDream/ai-digest)** (`eatingDream/ai-digest`) — Agent-driven bilingual (EN / 简体中文) daily & weekly AI digest pipeline published as an encrypted static site.
+- **[AIDigest](https://github.com/eatingDream/ai-digest)** (`eatingDream/ai-digest`) — Rust + TypeScript agent pipeline turning ~155 sources into a bilingual (EN / 简体中文) daily & weekly AI digest, published as a hardened GEO-ready static site with opt-in encryption.
 
 ## Engineering Standards
 
